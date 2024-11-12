@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style-2.css"> -->
+     <link rel="stylesheet" href="style.css">
     <title>Web Developer Portfolio</title>
 </head>
 <body>
-
+    <header>
     <nav>
         <div class="nav-container">
             <div class="logo">
@@ -37,13 +37,24 @@
         </div>
         </div>
     </nav>
-
-    <header>
-        <h1>Daniel Bucceri</h1>
-        <p>My Full Stack Web Development Portfolio</p>
     </header>
 <main>
-
+    <section class="about-me-container">
+        <div class="about-me-content">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I'm Daniel Bucceri, a passionate full-stack developer with a background in IT and a love for creating dynamic, responsive web applications. With experience in both front-end and back-end technologies, I bring a versatile skill set and a drive to craft engaging digital experiences. I'm tech-savvy, well-spoken, and known for my creativity and analytical approach.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="/Dall-E.png" alt="Daniel Bucceri" class="bio-photo">
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- <img src="/Dalle-large.jpg" alt="Hero image showcasing my work" class="full-width-image"> -->
+        </div>
+    </section>
     <section class="skills-container">
         <div class="skill">
             <h3>HTML5 & CSS3</h3>
@@ -77,220 +88,3 @@
 
 </body>
 </html>
-
-
-<style>
-    * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-       body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding: 0;
-        }
-        /* Navigation Bar */
-        nav {
-            background-color: #333;
-            color: #fff;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 90vw;
-            margin: 0 auto;
-            padding: 30px 20px;
-        }
-        .logo a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            margin-left: auto;
-            padding: 0;
-        }
-        .nav-links li {
-            margin-left: 20px;
-        }
-        .nav-links li:nth-of-type(1) a {
-            margin-left: auto;
-        }
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* hamburg menu toggle */
-        .menu-toggle {
-            display: none;
-        }
-        /* Hamburger Icon */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-            flex-direction: column;
-        }
-        .hamburger span {
-            background-color: #fff;
-            height: 3px;
-            width: 25px;
-            margin: 4px 0;
-            transition: 0.3s;
-        }
-
-        /* Header */
-        header {
-            background-color: #444;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            margin: 10px 0 0;
-            font-size: 1.2em;
-        }
-        /* Skills Section */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px 20px;
-            background-color: #f9f9f9;
-        }
-        .skill {
-            flex: 0 1 calc(33.33% - 30px);
-            max-width: calc(33.33% - 30px);
-            background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
-            margin: 15px;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            overflow: hidden;
-            position: relative;
-        }
-        .skill:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
-
-        .skill h3 {
-            margin-top: 0;
-            color: #333;
-            font-size: 1.3em;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-        }
-        .skill p {
-            color: #666;
-            font-size: 0.95em;
-            line-height: 1.5;
-            margin: 15px 0 0;
-        }
-        /* Footer */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9em;
-        }
-        /* Responsive Design */
-        @media (max-width: 700px) {
-            .skills-container {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
-            .skill {
-                max-width: none;
-                width: 100%;
-            }
-            .nav-container {
-                display:flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-                height: 4vh;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background-color: #333;
-                padding: 10px 0;
-            }
-            .nav-links li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-            .hamburger {
-                display: flex;
-                margin-left: auto;
-            }
-            .hamburger span {
-                background-color: #fff;
-                height: 3px;
-                width: 25px;
-                margin: 4px 0;
-                transition: all 0.3s ease;
-            }
-             /* Show the menu when checkbox is checked */
-             .menu-toggle:checked ~ .mobile-nav-links {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 59px; /* Adjust based on nav height */
-                left: 0;
-                width: 100%;
-                background-color: #333333;
-                padding: 10px 0;
-                z-index: 1000;
-            }
-            .nav-links a {
-                color: #fff;
-                padding: 10px 20px;
-                text-align: center;
-                display: block;
-                list-style: none;
-            }
-            header {
-                display:none;
-            }
-            .mobile-nav-links a {
-                color: #fff;
-                padding: 10px 20px;
-                text-align: center;
-                display: block;
-                text-decoration: none;
-            }
-        }
-        main {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-        }
-        .mobile-nav-links {
-            display: none;
-        }</style>

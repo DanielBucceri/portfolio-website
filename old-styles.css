@@ -1,4 +1,4 @@
-
+<style>
     * {
     padding: 0;
     margin: 0;
@@ -70,6 +70,22 @@
             margin: 4px 0;
             transition: 0.3s;
         }
+
+        /* Header */
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
         /* Skills Section */
         .skills-container {
             display: flex;
@@ -135,15 +151,6 @@
     margin: 0 auto;
     gap: 20px;
 }
-.about-me-content>:nth-last-of-type(3) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 120px;
-    margin: 0 auto;
-    gap: 20px;
-}
 
 .bio {
     flex: 1;
@@ -181,6 +188,8 @@
 .hero-image {
     margin-top: 40px;
 }
+
+
         /* Responsive Design */
         @media (max-width: 700px) {
             .skills-container {
@@ -239,7 +248,9 @@
                 display: block;
                 list-style: none;
             }
-
+            header {
+                display:none;
+            }
             .mobile-nav-links a {
                 color: #fff;
                 padding: 10px 20px;
@@ -247,6 +258,12 @@
                 display: block;
                 text-decoration: none;
             }
+            
+
+
+
+
+
 
             .about-me-content {
                 flex-direction: column;
@@ -273,4 +290,4 @@
         }
         .mobile-nav-links {
             display: none;
-        }
+        }</style>
