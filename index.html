@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style-2.css"> -->
     <title>Web Developer Portfolio</title>
 </head>
 <body>
@@ -12,19 +13,36 @@
             <div class="logo">
                 <a href="#">Daniel Bucceri</a>
             </div>
-            <ul class="nav-links">
+            <!-- Checkbox for the Hamburger Menu -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+            <!-- Navigation Links for Desktop -->
+            <ul class="mobile-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div>
+                <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
+        </div>
     </nav>
 
     <header>
         <h1>Daniel Bucceri</h1>
-        <p>Full Stack Web Developer</p>
+        <p>My Full Stack Web Development Portfolio</p>
     </header>
+<main>
 
     <section class="skills-container">
         <div class="skill">
@@ -52,37 +70,222 @@
             <p>Proficient in using tools for testing and debugging web applications.</p>
         </div>
     </section>
-
-    <section class="skills-container">
-        <div class="skill">
-            <h3>HTML5 & CSS3</h3>
-            <p>Expert in building responsive and modern websites using HTML5 and CSS3.</p>
-        </div>
-        <div class="skill">
-            <h3>JavaScript</h3>
-            <p>Proficient in vanilla JavaScript and frameworks like React and Angular.</p>
-        </div>
-        <div class="skill">
-            <h3>Back-End Development</h3>
-            <p>Experience with Node.js, Express, and databases like MongoDB and SQL.</p>
-        </div>
-        <div class="skill">
-            <h3>Responsive Design</h3>
-            <p>Skilled in creating mobile-first and responsive web designs.</p>
-        </div>
-        <div class="skill">
-            <h3>Version Control</h3>
-            <p>Experienced with Git and GitHub for version control and collaboration.</p>
-        </div>
-        <div class="skill">
-            <h3>Testing & Debugging</h3>
-            <p>Proficient in using tools for testing and debugging web applications.</p>
-        </div>
-    </section>
-
+</main>
     <footer>
         <p>&copy; 2024 Daniel Bucceri. All rights reserved.</p>
     </footer>
 
 </body>
 </html>
+
+
+<style>* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 0;
+        }
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 90vw;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+            padding: 0;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links li:nth-of-type(1) a {
+            margin-left: auto;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* hamburg menu toggle */
+        .menu-toggle {
+            display: none;
+        }
+        /* Hamburger Icon */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+        }
+        .hamburger span {
+            background-color: #fff;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0;
+            transition: 0.3s;
+        }
+
+        /* Header */
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+        .skill {
+            flex: 0 1 calc(33.33% - 30px);
+            max-width: calc(33.33% - 30px);
+            background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
+            margin: 15px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            position: relative;
+        }
+        .skill:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill h3 {
+            margin-top: 0;
+            color: #333;
+            font-size: 1.3em;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .skill p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin: 15px 0 0;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .skills-container {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+            .skill {
+                max-width: none;
+                width: 100%;
+            }
+            .nav-container {
+                display:flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                padding: 10px 0;
+            }
+            .nav-links li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .hamburger {
+                display: flex;
+                margin-left: auto;
+            }
+            .hamburger span {
+                background-color: #fff;
+                height: 3px;
+                width: 25px;
+                margin: 4px 0;
+                transition: all 0.3s ease;
+            }
+             /* Show the menu when checkbox is checked */
+             .menu-toggle:checked ~ .mobile-nav-links {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px; /* Adjust based on nav height */
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                padding: 10px 0;
+                z-index: 1000;
+            }
+            .nav-links a {
+                color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+                display: block;
+            }
+            header {
+                display:none;
+            }
+            .mobile-nav-links a {
+                color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+                display: block;
+            }
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+        .mobile-nav-links {
+            display: none;
+        }</style>

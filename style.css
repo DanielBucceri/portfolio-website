@@ -1,5 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-style: border-box;
+}
 
-        body {
+       body {
             font-family: Arial, sans-serif;
             margin: 0;
             display: flex;
@@ -61,18 +66,18 @@
         /* Skills Section */
         .skills-container {
             display: flex;
-            flex-grow: 1;
             flex-wrap: wrap;
             justify-content: center;
             padding: 50px 20px;
             background-color: #f9f9f9;
         }
         .skill {
-            flex: 1 1 250px;
-            max-width: 300px;
+            flex: 0 1 calc(33.33% - 30px); /* Adjusts for margin */
+            max-width: calc(33.33% - 30px);
+           
             background-color: #fff;
             margin: 15px;
-            padding: 25px;
+            padding: 20px;
             box-sizing: border-box;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -119,4 +124,9 @@
                 margin-left: 0;
                 margin-bottom: 10px;
             }
+        }
+        main {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
         }
