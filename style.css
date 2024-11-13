@@ -81,11 +81,11 @@
         .skills-heading {
             flex: 1 1 100%;
             width: 100%;
-            font-size: 2em;           
-    font-weight: bold;         
-    text-align: center;        
-    color: #333;
-    margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
         }
         .skill {
             flex: 0 1 calc(33.33% - 30px);
@@ -148,7 +148,7 @@
     background-color: #e1e1e1;   /* #f4f4f4; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
 
 }
@@ -171,7 +171,7 @@
     margin: 0 auto;
 }
 
-.resume-button {
+/* .resume-button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: large;
@@ -186,9 +186,18 @@
 
 .resume-button:hover {
     background-color: #555555;
+} */
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 3rem;
 }
-
-
+.github-logo, .linkedin-logo {
+    border-radius: 10px;
+}
 
 .bio {
     flex: 1;
@@ -239,6 +248,8 @@
             .skills-container {
                 flex-direction: column;
                 padding: 30px 20px;
+                align-items: center;
+                justify-content: center;
             }
             .about-image {
                 flex: 1;
@@ -250,7 +261,7 @@
             }
             .skill {
                 max-width: none;
-                width: 100%;
+                width: 90%;
             }
             .nav-container {
                 display:flex;
