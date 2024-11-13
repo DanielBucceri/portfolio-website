@@ -170,6 +170,7 @@
 
 
 .resume-button {
+    margin-top: 15px;
     padding: 10px 20px;
     background-color: #333333;
     color: white;
@@ -178,7 +179,6 @@
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s;
-
 }
 
 .resume-button:hover {
