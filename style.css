@@ -146,6 +146,10 @@
 .about-me-container {
     padding: 60px 20px;
     background-color: #e1e1e1;   /* #f4f4f4; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -153,25 +157,24 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
+    gap: 200px;
 }
+
 .about-me-content>:nth-last-of-type(3) {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 120px;
     margin: 0 auto;
-    gap: 20px;
 }
 
-
 .resume-button {
-    margin-top: 15px;
+    margin-top: 20px;
     padding: 10px 20px;
+    font-size: large;
     background-color: #333333;
     color: white;
     border: none;
@@ -231,19 +234,6 @@
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-/* Tail of the speech bubble */
-.speech-box::after {
-    content: "";
-    position: absolute;
-    bottom: -15px; /* Positions the tail below the box */
-    left: 20px; /* Adjusts position of the tail horizontally */
-    width: 0;
-    height: 0;
-    border: 10px solid transparent;
-    border-top-color: #f9f9f9; /* Matches the box background */
-    border-width: 10px 10px 0 10px; /* Creates a triangle pointing downwards */
-}
-
         /* Responsive Design */
         @media (max-width: 700px) {
             .skills-container {
@@ -323,6 +313,7 @@
             .about-me-content {
                 flex-direction: column;
                 align-items: center;
+                gap: 70px
             }
             .bio, .about-image {
                 max-width: 100%;
