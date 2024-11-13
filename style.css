@@ -199,6 +199,12 @@
     border-radius: 10px;
 }
 
+.logo {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .bio {
     flex: 1;
     max-width: 600px;
