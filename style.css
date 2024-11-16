@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;;
 }
 
        body {
@@ -18,8 +18,7 @@
         nav {
             background-color: #333;
             color: #fff;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
+
         }
         .nav-container {
             display: flex;
@@ -81,15 +80,6 @@
             padding: 50px 20px;
             background-color: #f9f9f9;
         }
-        .skills-heading {
-            flex: 1 1 100%;
-            width: 100%;
-            font-size: 2em;
-            font-weight: bold;
-            text-align: center;
-            color: #333;
-            margin-bottom: 30px;
-        }
         .skill {
             flex: 0 1 calc(33.33% - 30px);
             max-width: calc(33.33% - 30px);
@@ -133,6 +123,17 @@
             font-size: 0.95em;
             line-height: 1.5;
             margin: 15px 0 0;
+        }
+        .skills-heading {
+            flex: 1 1 100%;
+            width: 100%;
+            font-size: 2em;
+            font-weight: 700;
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
         }
         /* Footer */
         footer {
@@ -224,6 +225,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .bio {
@@ -288,15 +290,7 @@
     justify-content: center;
     align-items: center;
 }
-.projects-heading {
-    flex: 1 1 100%;
-    width: 100%;
-    font-size: 2em;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-}
+
 .project {
     flex: 0 1 calc(50% - 30px);
     background: linear-gradient(135deg, #f9f9f9 0%, #e8e8e8 100%);
@@ -328,14 +322,100 @@
     margin: 15px 0 0;
 }
 .projects-heading {
-    font-family: 'Arial', sans-serif;
-    font-size: 2rem;
+    flex: 1 1 100%;
+    width: 100%;
+    font-size: 2em;
     font-weight: 700;
     color: #444;
     text-align: center;
     margin-bottom: 20px;
     padding: 10px;
     border-bottom: 2px solid #ccc;
+}
+
+/* Contact Page  */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+#contacts-heading {
+    flex: 1 1 100%;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 700;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+    gap: 1rem;
+
+}
+.contact-image {
+    width: 90%;
+    align-self: center;
+    height: 50%;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.contact-links {
+    padding: 0;
+    list-style: none;
+}
+
+.contact-links li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.contact-links img {
+    border-radius: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.contact-form {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
+    padding: 1rem;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.contact-form h2 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #af4c4c, #2196f3);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    letter-spacing: 2px; 
+    margin-bottom: 1rem;
 }
         /* Responsive Design */
         @media (max-width: 700px) {
@@ -441,6 +521,10 @@
 
             .bio p {
                 font-size: 1em;
+            }
+            /* contact page */
+            .contact-section {
+                flex-direction: column;
             }
         }
         main {
