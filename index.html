@@ -45,7 +45,7 @@
         <div class="about-me-content">
             <div class="bio speech-box">
                 <h1>👋 Hello, I'm Daniel Bucceri</h1>
-                <p>Full-stack developer in the making with a background in IT. I’m passionate about building seamless digital experiences and am constantly pushing my skills to the next level.</p>
+                <p>Full-stack developer in the making with a background in IT. I’m passionate about building seamless digital experiences and am constantly pushing my skills to the next level.<div><button style="margin-top: 1rem;" class="submit-button" onclick="location.href='#contacts-form'">Contact Me</button></div></p>
             </div>
             <div class="about-image">
                 <img src="/Dall-E.png" alt="Daniel Bucceri" class="bio-photo">
@@ -94,9 +94,9 @@
     <section id="projects-container" class="projects-container">
         <h2 class="projects-heading">Past Projects</h2>
         <div class="project">
-            <a href="https://github.com/example/portfolio-website" target="_blank" class="project-link">
+            <a href="https://github.com/danielbucceri/portfolio-website" target="_blank" class="project-link">
                 <h3>Portfolio Website</h3>
-                <p>A personal portfolio showcasing web development skills and projects. Built with HTML, CSS, and JavaScript, featuring responsive design principles.</p>
+                <p>A personal portfolio showcasing web development skills and projects. Built with vanilla HTML and CSS featuring responsive design and a visually appealing layout</p>
             </a>
         </div>
         <div class="project">
@@ -134,23 +134,8 @@
                     <li><a href="tel:+123456789"><img src="/phone.png" alt="Phone" width="30"> +123 456 789</a></li>
                 </ul>
                 <p>Feel free to reach out for collaboration, freelance work, or just to say hi! I'm always open to exciting opportunities and discussions.</p>
-                <img class="contact-image"  src="/Contact-image.png" alt="Robot coding on a laptop with code themed symbols around">
+                <img class="contact-image" src="/Contact-image.png" alt="Robot coding on a laptop with code themed symbols around">
             </div>
-            <!-- <div class="contact-form" id="contact-form">
-                <h2>Send Me a Message</h2>
-                <form action="#" method="POST">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-    
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-    
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div> -->
             <div class="contact-form-container">
                 <h3>Contact Me</h3>
                 <form>
@@ -197,100 +182,8 @@
                 <img class="footer-linkedin-logo" src="/linkedin.png" alt="Linkedin Logo" width="50px"></a>
             </div>
     </footer>
-    <!-- <style>
-        .contact {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            background-color: #f9f9f9;
-        }
-        
-        .contact-section {
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-            width: 100%;
-        }
-        
-        .contact-info {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        
-        .contact-links {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .contact-links li {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .contact-links a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1rem;
-        }
-        
-        .contact-links a img {
-            vertical-align: middle;
-            border-radius: 5px;
-        }
-        
-        
-        .contact-form {
-            flex: 1;
-            background-color: #fff;
-            padding: 1.5rem;
-            border-radius: 5px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        
-        .contact-form h2 {
-            margin-bottom: 1rem;
-        }
-        
-        .contact-form label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-        }
-        
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 0.75rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        
-        .contact-form button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 0.75rem 1.5rem;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .contact-form button:hover {
-            background-color: #0056b3;
-        }
-        </style> -->
-        <style>.contact-form-container {
+        <style>
+            .contact-form-container {
             flex: 0 1 50%;
             padding: 20px;
             border-radius: 8px;
@@ -323,12 +216,14 @@
         }
         
         .submit-button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 0.75rem 1.5rem;
+            margin-top: 20px;
+            padding: 10px 10px;
+            font-size: large;
+            background-color: #333333;
+            color: white;
             border: none;
-            border-radius: 4px;
-            font-size: 1rem;
+            width: 8em;
+            border-radius: 50px;
             cursor: pointer;
             transition: background-color 0.3s;
         }

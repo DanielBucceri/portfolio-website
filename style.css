@@ -14,6 +14,28 @@
             min-height: 100vh;
             padding: 0;
         }
+        main {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+        .mobile-nav-links {
+            display: none;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
         /* Navigation Bar */
         nav {
             background-color: #333;
@@ -193,23 +215,6 @@
     margin: 0 auto;
 }
 
-/* .resume-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: large;
-    background-color: #333333;
-    color: white;
-    border: none;
-    width: 7em;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.resume-button:hover {
-    background-color: #555555;
-} */
-
 .socials {
     display: flex;
     flex-direction: row;
@@ -218,7 +223,7 @@
     margin-top: 3rem;
 }
 .github-logo, .linkedin-logo {
-   border-radius: 5px;
+   border-radius: 8px;
 }
 
 .logo {
@@ -259,11 +264,12 @@
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 /* About me speech box */
 .speech-box {
     position: relative;
-    background-color: #f9f9f9; /* Matches the light background color */
-    border: 2px solid #e0e0e0; /* Light border color for subtle outline */
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
     border-radius: 12px;
     padding: 20px;
     color: #333;
@@ -272,6 +278,9 @@
     max-width: 600px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+/* Bio contact button  */
+
+
 /* Projects page */
 .projects-page {
     display: flex;
@@ -289,6 +298,7 @@
     max-width: 80%;
     justify-content: center;
     align-items: center;
+    align-items: stretch;
 }
 
 .project {
@@ -368,16 +378,23 @@
 
 }
 .contact-image {
-    width: 90%;
+    width: 80%;
     align-self: center;
-    height: 50%;
+    height: 40%;
     border-radius: 10px;
     margin-top: 2rem;
 }
 
+/* socials links */
 .contact-links {
     padding: 0;
     list-style: none;
+}
+.contact-links li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-links li:hover {
+    transform: translateY(-5px);
 }
 
 .contact-links li {
@@ -391,6 +408,7 @@
     margin-left: 5px;
     vertical-align: middle;
 }
+/* contact form */
 .contact-form {
     flex: 1;
     flex-direction: column;
@@ -417,7 +435,7 @@ h3 {
     letter-spacing: 2px; 
     margin-bottom: 1rem;
 }
-        /* Responsive Design */
+        /* Mopbile Styles */
         @media (max-width: 700px) {
             .skills-container {
                 flex-direction: column;
@@ -527,25 +545,9 @@ h3 {
                 flex-direction: column;
             }
         }
-        main {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
+        @media (min-width: 701px) and (max-width: 1024px) {
+            .about-me-content {
+                gap: 2rem
+            }
         }
-        .mobile-nav-links {
-            display: none;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            height: 100%;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
+        
