@@ -28,7 +28,7 @@
         header {
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1000;  
             height: 100%;
         }
 
@@ -48,8 +48,15 @@
             align-items: center;
             max-width: 90vw;
             margin: 0 auto;
-            padding: 5px 20px;
-}
+            padding: 5px 20px;}
+        .logo {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo img {
+            margin-top: 5px;
+        }
         .logo a {
             color: #fff;
             text-decoration: none;
@@ -101,6 +108,44 @@
             justify-content: center;
             padding: 50px 20px;
             background-color: #f9f9f9;
+            width: 80%;
+        }
+
+        .skills-bio {
+            width: 90%;
+            text-align: center;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .dots {
+            display: flex;
+            justify-content: center;
+        }
+        .dots span {
+            background-color: #000000;
+                height: 15px;
+                width: 15px;
+                margin: 4px 4px;
+                gap: 1rem;
+                border-radius: 50%;
+        }
+        .skills-bio p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            width: 90%;
+            margin: 0 auto 1rem;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+        }
+        .skills-page {
+            display: flex;
+            flex-direction: row;
+            background-color: #f9f9f9 ;
+            justify-content: center;
+            align-items: center;
         }
         .skill {
             flex: 0 1 calc(33.33% - 30px);
@@ -124,15 +169,6 @@
             overflow: hidden;
             position: relative;
         }
-        .about-image:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
-        }
-        /* .skill:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.15);
-        } */
-
         .skill h3 {
             margin-top: 0;
             color: #333;
@@ -224,14 +260,13 @@
 }
 .github-logo, .linkedin-logo {
    border-radius: 8px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-me-container .github-logo:hover,
+.about-me-container .linkedin-logo:hover {
+    box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.5), 0 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-.logo {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .bio {
     flex: 1;
